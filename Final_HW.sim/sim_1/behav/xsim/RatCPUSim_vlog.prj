@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../HW_4/HW_4.srcs/sources_1/new/ALU.sv" \
+"../../../../../HW_1/HW_1.srcs/sources_1/new/Flag.sv" \
+"../../../../../HW_1/HW_1.srcs/sources_1/new/Mux2.sv" \
+"../../../../../HW_1/HW_1.srcs/sources_1/new/Mux4.sv" \
+"../../../../../HW_3/HW_3.srcs/sources_1/new/ProgRom.sv" \
+"../../../../../HW_3/HW_3.srcs/sources_1/new/Ram.sv" \
+"../../../../../HW_1/HW_1.srcs/sources_1/new/Register.sv" \
+"../../../../HW_8.srcs/sources_1/new/ControlUnit.sv" \
+"../../../../HW_8.srcs/sources_1/new/RatCPU.sv" \
+"../../../../HW_8.srcs/sources_1/new/RatWrapper.sv" \
+"../../../../../SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv" \
+"../../../../HW_8.srcs/sources_1/new/Debounce.sv" \
+"../../../../HW_8.srcs/sim_1/new/RatCPUSim.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

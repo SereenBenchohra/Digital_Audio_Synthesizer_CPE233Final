@@ -1,0 +1,763 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun  1 17:38:32 2019
+# Process ID: 11608
+# Current directory: D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.runs/synth_1
+# Command line: vivado.exe -log RatWrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RatWrapper.tcl
+# Log file: D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.runs/synth_1/RatWrapper.vds
+# Journal file: D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RatWrapper.tcl -notrace
+Command: synth_design -top RatWrapper -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10880 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 339.934 ; gain = 67.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RatWrapper' [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:7]
+	Parameter SWITCHES_ID bound to: 8'b00100000 
+	Parameter U_SWITCHES_ID bound to: 8'b00100001 
+	Parameter LEDS_ID bound to: 8'b01000000 
+	Parameter BUTTONS_ID bound to: 8'b11111111 
+	Parameter SSEG_ID bound to: 8'b10000001 
+	Parameter KEYBOARD_ID bound to: 8'b01000100 
+	Parameter SPEAKER_ID bound to: 8'b01000110 
+INFO: [Synth 8-6157] synthesizing module 'RatCPU' [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatCPU.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'Register' [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Register.sv:8]
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Register' (1#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Register.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'Mux4' [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux4.sv:8]
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux4.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4' (2#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux4.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'ProgRom' [D:/Cal Poly/S19/CPE 233/Vivado/HW_3/HW_3.srcs/sources_1/new/ProgRom.sv:9]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "{distributed | block}" *) [D:/Cal Poly/S19/CPE 233/Vivado/HW_3/HW_3.srcs/sources_1/new/ProgRom.sv:15]
+INFO: [Synth 8-3876] $readmem data file 'SW_8.mem' is read successfully [D:/Cal Poly/S19/CPE 233/Vivado/HW_3/HW_3.srcs/sources_1/new/ProgRom.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'ProgRom' (3#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_3/HW_3.srcs/sources_1/new/ProgRom.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'Ram' [D:/Cal Poly/S19/CPE 233/Vivado/HW_3/HW_3.srcs/sources_1/new/Ram.sv:9]
+	Parameter ADDR_SIZE bound to: 5 - type: integer 
+	Parameter DATA_SIZE bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Ram' (4#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_3/HW_3.srcs/sources_1/new/Ram.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'Mux4__parameterized0' [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux4.sv:8]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux4.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'Mux4__parameterized0' (4#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux4.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/Cal Poly/S19/CPE 233/Vivado/HW_4/HW_4.srcs/sources_1/new/ALU.sv:9]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (5#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_4/HW_4.srcs/sources_1/new/ALU.sv:9]
+INFO: [Synth 8-6157] synthesizing module 'Mux2' [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:8]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2' (6#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'Flag' [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Flag.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'Flag' (7#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Flag.sv:8]
+WARNING: [Synth 8-350] instance 'Z_Flag' of module 'Flag' requires 6 connections, but only 4 given [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatCPU.sv:71]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/ControlUnit.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (8#1) [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/ControlUnit.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'Ram__parameterized0' [D:/Cal Poly/S19/CPE 233/Vivado/HW_3/HW_3.srcs/sources_1/new/Ram.sv:9]
+	Parameter ADDR_SIZE bound to: 8 - type: integer 
+	Parameter DATA_SIZE bound to: 10 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Ram__parameterized0' (8#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_3/HW_3.srcs/sources_1/new/Ram.sv:9]
+WARNING: [Synth 8-350] instance 'Scratch_Ram' of module 'Ram' requires 7 connections, but only 6 given [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatCPU.sv:89]
+INFO: [Synth 8-6157] synthesizing module 'Mux2__parameterized0' [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:8]
+	Parameter WIDTH bound to: 10 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2__parameterized0' (8#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'Register__parameterized0' [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Register.sv:8]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Register__parameterized0' (8#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Register.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'Mux2__parameterized1' [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:8]
+	Parameter WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:16]
+INFO: [Synth 8-6155] done synthesizing module 'Mux2__parameterized1' (8#1) [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Mux2.sv:8]
+INFO: [Synth 8-6155] done synthesizing module 'RatCPU' (9#1) [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatCPU.sv:8]
+INFO: [Synth 8-6157] synthesizing module 'UnivSseg' [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:62]
+INFO: [Synth 8-6157] synthesizing module 'cnt_convert_14b' [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:255]
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:274]
+INFO: [Synth 8-6155] done synthesizing module 'cnt_convert_14b' (10#1) [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:255]
+INFO: [Synth 8-6157] synthesizing module 'cnt_convert_7b' [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:353]
+WARNING: [Synth 8-567] referenced signal 'cnt' should be on the sensitivity list [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:367]
+INFO: [Synth 8-6155] done synthesizing module 'cnt_convert_7b' (11#1) [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:353]
+INFO: [Synth 8-6157] synthesizing module 'clk_divder' [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:238]
+	Parameter n bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clk_divder' (12#1) [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:238]
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:109]
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:125]
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:137]
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:149]
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:161]
+INFO: [Synth 8-226] default block is never used [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:173]
+INFO: [Synth 8-6155] done synthesizing module 'UnivSseg' (13#1) [D:/Cal Poly/S19/CPE 233/Vivado/SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv:62]
+WARNING: [Synth 8-350] instance 'mySseg' of module 'UnivSseg' requires 10 connections, but only 5 given [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+INFO: [Synth 8-6157] synthesizing module 'KeyboardDriver' [D:/Cal Poly/S19/CPE 233/Vivado/Keyboard/KeyboardDriver.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'keyboard' [D:/Cal Poly/S19/CPE 233/Vivado/Keyboard/KeyboardDriver.sv:91]
+	Parameter BREAKKEY bound to: 8'b11110000 
+	Parameter SHIFT1 bound to: 8'b00010010 
+	Parameter SHIFT2 bound to: 8'b01011001 
+	Parameter CAPS bound to: 8'b01011000 
+	Parameter ST_lowercase bound to: 3'b000 
+	Parameter ST_ignore_break bound to: 3'b001 
+	Parameter ST_shift bound to: 3'b010 
+	Parameter ST_ignore_shift_break bound to: 3'b011 
+	Parameter ST_capslock bound to: 3'b100 
+	Parameter ST_ignore_caps_break bound to: 3'b101 
+INFO: [Synth 8-6157] synthesizing module 'ps2_rx' [D:/Cal Poly/S19/CPE 233/Vivado/Keyboard/KeyboardDriver.sv:232]
+	Parameter IDLE bound to: 1'b0 
+	Parameter RX bound to: 1'b1 
+INFO: [Synth 8-6155] done synthesizing module 'ps2_rx' (14#1) [D:/Cal Poly/S19/CPE 233/Vivado/Keyboard/KeyboardDriver.sv:232]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Cal Poly/S19/CPE 233/Vivado/Keyboard/KeyboardDriver.sv:148]
+INFO: [Synth 8-6155] done synthesizing module 'keyboard' (15#1) [D:/Cal Poly/S19/CPE 233/Vivado/Keyboard/KeyboardDriver.sv:91]
+INFO: [Synth 8-6155] done synthesizing module 'KeyboardDriver' (16#1) [D:/Cal Poly/S19/CPE 233/Vivado/Keyboard/KeyboardDriver.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'SpeakerDriver' [D:/Cal Poly/S19/CPE 233/Vivado/Speaker/SpeakerDriver.sv:56]
+INFO: [Synth 8-6157] synthesizing module 'MuxFreq' [D:/Cal Poly/S19/CPE 233/Vivado/Speaker/MuxFreq.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'MuxFreq' (17#1) [D:/Cal Poly/S19/CPE 233/Vivado/Speaker/MuxFreq.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'ClkDivider' [D:/Cal Poly/S19/CPE 233/Vivado/Speaker/ClkDivider.sv:11]
+WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [D:/Cal Poly/S19/CPE 233/Vivado/Speaker/ClkDivider.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'ClkDivider' (18#1) [D:/Cal Poly/S19/CPE 233/Vivado/Speaker/ClkDivider.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'SpeakerDriver' (19#1) [D:/Cal Poly/S19/CPE 233/Vivado/Speaker/SpeakerDriver.sv:56]
+INFO: [Synth 8-6155] done synthesizing module 'RatWrapper' (20#1) [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:7]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 396.070 ; gain = 123.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Z_Flag:SET to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatCPU.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin Z_Flag:CLR to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatCPU.sv:71]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:cnt2[6] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:cnt2[5] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:cnt2[4] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:cnt2[3] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:cnt2[2] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:cnt2[1] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:cnt2[0] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:dp_en to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:dp_sel[1] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:dp_sel[0] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:mod_sel[1] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:mod_sel[0] to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+WARNING: [Synth 8-3295] tying undriven pin mySseg:sign to constant 0 [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/sources_1/new/RatWrapper.sv:46]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 396.070 ; gain = 123.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 396.070 ; gain = 123.465
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/constrs_1/new/Basys3Master.xdc]
+Finished Parsing XDC File [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/constrs_1/new/Basys3Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.srcs/constrs_1/new/Basys3Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RatWrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RatWrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 737.859 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 737.859 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 737.859 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 737.859 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 737.859 ; gain = 465.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 737.859 ; gain = 465.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:23 . Memory (MB): peak = 737.859 ; gain = 465.254
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Register.sv:21]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Cal Poly/S19/CPE 233/Vivado/HW_4/HW_4.srcs/sources_1/new/ALU.sv:21]
+INFO: [Synth 8-5546] ROM "Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'ControlUnit'
+INFO: [Synth 8-5546] ROM "I_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "I_CLR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_OPY_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SP_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SP_INCR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SP_DECR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SCR_WE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SCR_DATA_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLG_C_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLG_C_CLR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FLG_LD_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IO_STRB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PC_MUX_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RF_WR_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "SCR_ADDR_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALU_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "RST" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "FLG_SHAD_LD" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "PC_INC" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "NS" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Cal Poly/S19/CPE 233/Vivado/HW_1/HW_1.srcs/sources_1/new/Register.sv:21]
+INFO: [Synth 8-5544] ROM "rx_done_tick" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'keyboard'
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "caps_num_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "letter_case" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'StateReg_reg' in module 'KeyboardDriver'
+INFO: [Synth 8-5544] ROM "intrptCount" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "INTRPT" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "StateReg" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StateReg" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "r_led" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                             0001 | 00000000000000000000000000000000
+                   FETCH |                             0010 | 00000000000000000000000000000001
+                    EXEC |                             0100 | 00000000000000000000000000000010
+                   INTER |                             1000 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'one-hot' in module 'ControlUnit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            ST_lowercase |                           000001 |                              000
+                ST_shift |                           000010 |                              010
+   ST_ignore_shift_break |                           000100 |                              011
+             ST_capslock |                           001000 |                              100
+    ST_ignore_caps_break |                           010000 |                              101
+         ST_ignore_break |                           100000 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'one-hot' in module 'keyboard'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_WAIT |                                0 | 00000000000000000000000000000000
+               ST_INTRPT |                                1 | 00000000000000000000000000000001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StateReg_reg' using encoding 'sequential' in module 'KeyboardDriver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 737.859 ; gain = 465.254
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 18    
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 15    
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Registers : 
+	               18 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 11    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   4 Input     14 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 1     
+	  16 Input      9 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   5 Input      8 Bit        Muxes := 1     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      6 Bit        Muxes := 1     
+	  48 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 4     
+	  48 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	  48 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 17    
+	   3 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RatWrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module Register 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Mux4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+Module ProgRom 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Mux4__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 2     
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Muxes : 
+	  16 Input      9 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module Mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module Flag 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	  48 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	  48 Input      2 Bit        Muxes := 2     
+	  48 Input      1 Bit        Muxes := 14    
+	   4 Input      1 Bit        Muxes := 16    
+Module Mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module Register__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Mux2__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module RatCPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
+Module cnt_convert_14b 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 18    
+	   2 Input      4 Bit       Adders := 7     
++---Muxes : 
+	   4 Input     14 Bit        Muxes := 1     
+Module cnt_convert_7b 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 7     
+Module UnivSseg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 5     
+Module ps2_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 4     
+	   3 Input      6 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 5     
+Module KeyboardDriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module ClkDivider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module SpeakerDriver 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "KEYBD/keybd/state_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "KEYBD/intrptCount" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "myCPU/ALU/Z" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/ALU_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/SCR_ADDR_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/RF_WR_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/PC_MUX_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/IO_STRB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/FLG_LD_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/FLG_C_CLR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/FLG_C_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/SCR_DATA_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/SCR_WE" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/SP_DECR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/SP_INCR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/SP_LD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/ALU_OPY_SEL" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/I_CLR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "myCPU/Control_Unit/I_SET" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "KEYBD/keybd/caps_num_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "KEYBD/keybd/state_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "O290" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "r_led" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "O320" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register myCPU/PC/DOUT_reg_rep driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 737.859 ; gain = 465.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+-----------------------------+---------------+----------------+
+|Module Name | RTL Object                  | Depth x Width | Implemented As | 
++------------+-----------------------------+---------------+----------------+
+|ControlUnit | FLG_Z_LD                    | 128x1         | LUT            | 
+|ControlUnit | FLG_C_LD                    | 128x1         | LUT            | 
+|ControlUnit | RF_WR                       | 128x1         | LUT            | 
+|MuxFreq     | out                         | 256x16        | LUT            | 
+|RatWrapper  | myCPU/Prog_Rom/PROG_IR_reg  | 1024x18       | Block RAM      | 
+|RatWrapper  | myCPU/Control_Unit/FLG_Z_LD | 128x1         | LUT            | 
+|RatWrapper  | myCPU/Control_Unit/FLG_C_LD | 128x1         | LUT            | 
+|RatWrapper  | myCPU/Control_Unit/RF_WR    | 128x1         | LUT            | 
+|RatWrapper  | r_speaker_reg               | 256x16        | Block RAM      | 
++------------+-----------------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+-----------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------+-----------+----------------------+------------------+
+|RatWrapper  | myCPU/Scratch_Ram/mem_reg   | Implied   | 256 x 10             | RAM256X1S x 10   | 
+|RatWrapper  | myCPU/Register_File/mem_reg | Implied   | 32 x 8               | RAM32X1D x 8     | 
++------------+-----------------------------+-----------+----------------------+------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_9/myCPU/Prog_Rom/PROG_IR_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_26/r_speaker_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 737.859 ; gain = 465.254
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 750.441 ; gain = 477.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+-----------------------------+-----------+----------------------+------------------+
+|Module Name | RTL Object                  | Inference | Size (Depth x Width) | Primitives       | 
++------------+-----------------------------+-----------+----------------------+------------------+
+|RatWrapper  | myCPU/Scratch_Ram/mem_reg   | Implied   | 256 x 10             | RAM256X1S x 10   | 
+|RatWrapper  | myCPU/Register_File/mem_reg | Implied   | 32 x 8               | RAM32X1D x 8     | 
++------------+-----------------------------+-----------+----------------------+------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance myCPU/Prog_Rom/PROG_IR_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance r_speaker_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 767.660 ; gain = 495.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 767.660 ; gain = 495.055
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 767.660 ; gain = 495.055
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 767.660 ; gain = 495.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 767.660 ; gain = 495.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 767.660 ; gain = 495.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 767.660 ; gain = 495.055
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    35|
+|3     |LUT1       |    13|
+|4     |LUT2       |    52|
+|5     |LUT3       |    42|
+|6     |LUT4       |    86|
+|7     |LUT5       |    81|
+|8     |LUT6       |   145|
+|9     |MUXF7      |    17|
+|10    |MUXF8      |     8|
+|11    |RAM256X1S  |    10|
+|12    |RAM32X1D   |     8|
+|13    |RAMB18E1   |     1|
+|14    |RAMB18E1_1 |     1|
+|15    |FDRE       |   140|
+|16    |FDSE       |     1|
+|17    |IBUF       |    24|
+|18    |OBUF       |    21|
++------+-----------+------+
+
+Report Instance Areas: 
++------+------------------+-------------------------+------+
+|      |Instance          |Module                   |Cells |
++------+------------------+-------------------------+------+
+|1     |top               |                         |   688|
+|2     |  KEYBD           |KeyboardDriver           |    98|
+|3     |    keybd         |keyboard                 |    80|
+|4     |      ps2_rx_unit |ps2_rx                   |    61|
+|5     |  SPEAKER         |SpeakerDriver            |    49|
+|6     |    sclk          |ClkDivider               |    49|
+|7     |  myCPU           |RatCPU                   |   352|
+|8     |    ALU           |ALU                      |    36|
+|9     |    C_Flag        |Flag                     |     2|
+|10    |    Control_Unit  |ControlUnit              |    44|
+|11    |    I_Flag        |Flag_0                   |     1|
+|12    |    PC            |Register                 |    52|
+|13    |    Prog_Rom      |ProgRom                  |   144|
+|14    |    Register_File |Ram                      |    35|
+|15    |    Scratch_Ram   |Ram__parameterized0      |    10|
+|16    |    Shad_C_Flag   |Flag_1                   |     1|
+|17    |    Shad_Z_Flag   |Flag_2                   |     1|
+|18    |    Stack_Pointer |Register__parameterized0 |    23|
+|19    |    Z_Flag        |Flag_3                   |     3|
+|20    |  mySseg          |UnivSseg                 |   115|
+|21    |    CC_14         |cnt_convert_14b          |    85|
+|22    |    CLK_DIV       |clk_divder               |    19|
++------+------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 767.660 ; gain = 495.055
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:29 . Memory (MB): peak = 767.660 ; gain = 153.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:42 . Memory (MB): peak = 767.660 ; gain = 495.055
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 80 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 767.660 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+148 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:45 . Memory (MB): peak = 767.660 ; gain = 495.055
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 767.660 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.runs/synth_1/RatWrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RatWrapper_utilization_synth.rpt -pb RatWrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  1 17:39:20 2019...

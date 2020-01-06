@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jun  1 17:38:32 2019
+# Process ID: 11608
+# Current directory: D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.runs/synth_1
+# Command line: vivado.exe -log RatWrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RatWrapper.tcl
+# Log file: D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.runs/synth_1/RatWrapper.vds
+# Journal file: D:/Cal Poly/S19/CPE 233/Vivado/Final_HW/Final_HW.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RatWrapper.tcl -notrace

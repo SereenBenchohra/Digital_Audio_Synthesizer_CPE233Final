@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1559435909">
+  <File Type="PA-TCL" Name="RatWrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RatWrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RatWrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RatWrapper.vds"/>
+  <File Type="RDS-UTIL" Name="RatWrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RatWrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RatWrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RatWrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RatWrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../HW_4/HW_4.srcs/sources_1/new/ALU.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HW_1/HW_1.srcs/sources_1/new/Flag.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HW_1/HW_1.srcs/sources_1/new/Mux2.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HW_1/HW_1.srcs/sources_1/new/Mux4.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HW_3/HW_3.srcs/sources_1/new/ProgRom.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HW_3/HW_3.srcs/sources_1/new/Ram.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HW_1/HW_1.srcs/sources_1/new/Register.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ControlUnit.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_5/HW_5.srcs/sources_1/new/ControlUnit.sv"/>
+        <Attr Name="ImportTime" Val="1557181653"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RatCPU.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_5/HW_5.srcs/sources_1/new/RatCPU.sv"/>
+        <Attr Name="ImportTime" Val="1556864866"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RatWrapper.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/RatWrapper.sv"/>
+        <Attr Name="ImportTime" Val="1557709550"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../SevenSeg/SevenSeg.srcs/sources_1/new/UnivSseg.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_6_1a.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/HW_6_1a.mem"/>
+        <Attr Name="ImportTime" Val="1557645852"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_6_3c.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/HW_6_3c.mem"/>
+        <Attr Name="ImportTime" Val="1557646187"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_6_1b.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/HW_6_1b.mem"/>
+        <Attr Name="ImportTime" Val="1557646550"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_6_6a.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/HW_6_6a.mem"/>
+        <Attr Name="ImportTime" Val="1557686548"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_6_1c.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/HW_6_1c.mem"/>
+        <Attr Name="ImportTime" Val="1557688758"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_6_7a.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/HW_6_7a.mem"/>
+        <Attr Name="ImportTime" Val="1557689662"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/prog_rom.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/prog_rom.mem"/>
+        <Attr Name="ImportTime" Val="1555975492"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SW_6.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/sources_1/new/SW_6.mem"/>
+        <Attr Name="ImportTime" Val="1557785165"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_7_4a.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/HW_7_4a.mem"/>
+        <Attr Name="ImportTime" Val="1558386488"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_7_5a.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/HW_7_5a.mem"/>
+        <Attr Name="ImportTime" Val="1558386553"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_7_4b.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/HW_7_4b.mem"/>
+        <Attr Name="ImportTime" Val="1558386515"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_7_3b.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/HW_7_3b.mem"/>
+        <Attr Name="ImportTime" Val="1558386460"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_7_6b.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/HW_7_6b.mem"/>
+        <Attr Name="ImportTime" Val="1558398557"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_7_TestAll.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/HW_7_TestAll.mem"/>
+        <Attr Name="ImportTime" Val="1558390934"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_7_2a.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/HW_7_2a.mem"/>
+        <Attr Name="ImportTime" Val="1558386414"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_7_5aTEST.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/HW_7_5aTEST.mem"/>
+        <Attr Name="ImportTime" Val="1558394446"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/SW_7.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_7/HW_7.srcs/sources_1/new/SW_7.mem"/>
+        <Attr Name="ImportTime" Val="1558474135"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Debounce.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_8/HW_8.srcs/sources_1/new/Debounce.sv"/>
+        <Attr Name="ImportTime" Val="1558488086"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_8_8a.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_8/HW_8.srcs/sources_1/new/HW_8_8a.mem"/>
+        <Attr Name="ImportTime" Val="1558488505"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/HW_8_TEST.mem">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_8/HW_8.srcs/sources_1/new/HW_8_TEST.mem"/>
+        <Attr Name="ImportTime" Val="1558497075"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../HW_8/HW_8.srcs/sources_1/new/SW_8.mem">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Keyboard/KeyboardDriver.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Speaker/SpeakerDriver.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Speaker/ClkDivider.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Speaker/MuxFreq.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RatWrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Basys3Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../HW_6/HW_6.srcs/constrs_1/new/Basys3Master.xdc"/>
+        <Attr Name="ImportTime" Val="1557709957"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,88 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sat Jun  1 17:40:16 2019
+| Host         : DESKTOP-H16I0HQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file RatWrapper_control_sets_placed.rpt
+| Design       : RatWrapper
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    17 |
+| Unused register locations in slices containing registers |    33 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            2 |
+|      6 |            1 |
+|      7 |            1 |
+|      8 |            5 |
+|     10 |            1 |
+|     12 |            1 |
+|    16+ |            5 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              43 |           18 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              20 |            6 |
+| Yes          | No                    | No                     |              52 |           16 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              28 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+----------------------------------------------------------+-------------------------+------------------+----------------+
+|     Clock Signal    |                       Enable Signal                      |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++---------------------+----------------------------------------------------------+-------------------------+------------------+----------------+
+|  mySseg/CLK_DIV/CLK |                                                          |                         |                1 |              2 |
+|  CLK50              | KEYBD/keybd/ps2_rx_unit/p_0_in                           |                         |                1 |              4 |
+|  s_clk_50_BUFG      |                                                          | BTNC_IBUF               |                2 |              4 |
+|  CLK50              | KEYBD/keybd/ps2_rx_unit/FSM_onehot_state_reg_reg[1]      |                         |                2 |              6 |
+|  s_clk_50_BUFG      |                                                          |                         |                5 |              7 |
+|  CLK50              | KEYBD/keybd/ps2_rx_unit/E[0]                             |                         |                2 |              8 |
+|  CLK_IBUF_BUFG      | myCPU/Prog_Rom/E[0]                                      |                         |                3 |              8 |
+|  CLK_IBUF_BUFG      | myCPU/Prog_Rom/PROG_IR_reg_1[0]                          |                         |                3 |              8 |
+|  CLK_IBUF_BUFG      | KEYBD/keybd/ps2_rx_unit/FSM_onehot_state_reg_reg[0]_0[0] |                         |                2 |              8 |
+|  s_clk_50_BUFG      | myCPU/Prog_Rom/FSM_onehot_PS_reg[3]_0[0]                 | myCPU/Control_Unit/Q[0] |                2 |              8 |
+|  CLK50              | KEYBD/keybd/ps2_rx_unit/d_reg[10]_i_1_n_0                |                         |                3 |             10 |
+|  CLK50              |                                                          |                         |                4 |             12 |
+|  CLK_IBUF_BUFG      |                                                          | SPEAKER/sclk/clear      |                4 |             16 |
+|  s_clk_50_BUFG      | myCPU/Prog_Rom/rf_wr                                     |                         |                2 |             16 |
+|  s_clk_50_BUFG      | myCPU/Control_Unit/E[0]                                  | myCPU/Control_Unit/Q[0] |                8 |             20 |
+|  CLK_IBUF_BUFG      |                                                          |                         |                8 |             22 |
+|  s_clk_50_BUFG      | myCPU/Prog_Rom/scr_we                                    |                         |               10 |             40 |
++---------------------+----------------------------------------------------------+-------------------------+------------------+----------------+
+
+
