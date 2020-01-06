@@ -1,2 +1,2 @@
-# CPE233Final
+# DIgital Audio Synthesizer
 Digital Audio Synthesizer 
